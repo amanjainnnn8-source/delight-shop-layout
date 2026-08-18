@@ -11,13 +11,13 @@ import orionImage from "@/assets/variant-orion.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "REGALIA (100ml) — Extrait de Parfum" },
+      { title: "angle-line (100ml) — Extrait de Parfum" },
       {
         name: "description",
         content:
-          "REGALIA 100ml extrait de parfum. Smoke, leather and the final say. Unisex. Ships within 24-36 hours.",
+          "angle-line 100ml extrait de parfum. Smoke, leather and the final say. Unisex. Ships within 24-36 hours.",
       },
-      { property: "og:title", content: "REGALIA (100ml) — Extrait de Parfum" },
+      { property: "og:title", content: "angle-line (100ml) — Extrait de Parfum" },
       {
         property: "og:description",
         content: "Smoke, leather and the final say. Unisex extrait de parfum, 100ml.",
@@ -30,8 +30,8 @@ export const Route = createFileRoute("/")({
 });
 
 const gallery = [
-  { src: mainImage, alt: "REGALIA parfum bottle shaped like a chess king" },
-  { src: packagingImage, alt: "REGALIA black gift box packaging with the bottle" },
+  { src: mainImage, alt: "angle-line parfum bottle shaped like a chess king" },
+  { src: packagingImage, alt: "angle-line black gift box packaging with the bottle" },
 ];
 
 const variants = [
@@ -62,7 +62,7 @@ function ProductPage() {
           <Menu className="size-5" strokeWidth={1.5} />
         </button>
         <span className="text-xl font-extrabold uppercase" style={{ letterSpacing: "var(--tracking-brand)" }}>
-          Regalia
+          angle-line
         </span>
         <div className="flex items-center gap-4">
           <span className="btn-ink hidden px-4 py-2 md:inline-flex hover:btn-ink-hover">Buy now</span>
@@ -109,7 +109,7 @@ function ProductPage() {
 
           <div className="md:sticky md:top-28 md:self-start">
             <h1 className="text-4xl uppercase md:text-5xl">
-              Regalia <span className="text-2xl md:text-3xl">(100ml)</span>
+              angle-line <span className="text-2xl md:text-3xl">(100ml)</span>
             </h1>
 
             <div className="mt-4 flex flex-wrap gap-2">
@@ -191,7 +191,7 @@ function ProductPage() {
           </div>
           <img
             src={packagingImage}
-            alt="REGALIA packaging on dark marble"
+            alt="angle-line packaging on dark marble"
             width={1200}
             height={1200}
             loading="lazy"
@@ -202,7 +202,7 @@ function ProductPage() {
 
       <footer className="flex flex-col items-center gap-3 px-5 py-12 text-center">
         <span className="text-lg font-extrabold uppercase" style={{ letterSpacing: "var(--tracking-brand)" }}>
-          Regalia
+          angle-line
         </span>
         <p className="label-xs text-muted-foreground">Power isn't inherited. It's built.</p>
       </footer>
