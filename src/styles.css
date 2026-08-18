@@ -62,26 +62,30 @@
 }
 
 :root {
-  --radius: 0.625rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.129 0.042 264.695);
+  --radius: 0rem;
+  --background: oklch(0.985 0.002 90);
+  --foreground: oklch(0.16 0 0);
   --card: oklch(1 0 0);
-  --card-foreground: oklch(0.129 0.042 264.695);
+  --card-foreground: oklch(0.16 0 0);
   --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.129 0.042 264.695);
-  --primary: oklch(0.208 0.042 265.755);
-  --primary-foreground: oklch(0.984 0.003 247.858);
-  --secondary: oklch(0.968 0.007 247.896);
-  --secondary-foreground: oklch(0.208 0.042 265.755);
-  --muted: oklch(0.968 0.007 247.896);
-  --muted-foreground: oklch(0.554 0.046 257.417);
-  --accent: oklch(0.968 0.007 247.896);
-  --accent-foreground: oklch(0.208 0.042 265.755);
+  --popover-foreground: oklch(0.16 0 0);
+  --primary: oklch(0.14 0 0);
+  --primary-foreground: oklch(0.985 0.002 90);
+  --secondary: oklch(0.94 0.002 90);
+  --secondary-foreground: oklch(0.16 0 0);
+  --muted: oklch(0.945 0.002 90);
+  --muted-foreground: oklch(0.5 0.005 90);
+  --accent: oklch(0.93 0.002 90);
+  --accent-foreground: oklch(0.16 0 0);
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.984 0.003 247.858);
-  --border: oklch(0.929 0.013 255.508);
-  --input: oklch(0.929 0.013 255.508);
-  --ring: oklch(0.704 0.04 256.788);
+  --border: oklch(0.89 0.002 90);
+  --input: oklch(0.89 0.002 90);
+  --ring: oklch(0.16 0 0);
+  --surface-stone: oklch(0.925 0.003 90);
+  --ink: oklch(0.14 0 0);
+  --font-display: "Archivo", system-ui, sans-serif;
+  --tracking-brand: 0.32em;
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
   --chart-3: oklch(0.398 0.07 227.392);
@@ -140,5 +144,41 @@
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
+    font-family: var(--font-display);
+    font-feature-settings: "ss01";
   }
+
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-display);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+  }
+}
+
+@utility label-xs {
+  font-size: 0.6875rem;
+  line-height: 1;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+@utility btn-ink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--ink);
+  color: var(--color-primary-foreground);
+  font-size: 0.8125rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 1rem 1.75rem;
+  transition: opacity 200ms ease;
+}
+
+@utility btn-ink-hover {
+  opacity: 0.82;
 }
