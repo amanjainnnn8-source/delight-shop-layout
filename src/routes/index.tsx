@@ -11,13 +11,13 @@ import orionImage from "@/assets/variant-orion.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "REGALIA (100ml) — Extrait de Parfum" },
+      { title: "angle-line (100ml) — Extrait de Parfum" },
       {
         name: "description",
         content:
-          "REGALIA 100ml extrait de parfum. Smoke, leather and the final say. Unisex. Ships within 24-36 hours.",
+          "angle-line 100ml extrait de parfum. Smoke, leather and the final say. Unisex. Ships within 24-36 hours.",
       },
-      { property: "og:title", content: "REGALIA (100ml) — Extrait de Parfum" },
+      { property: "og:title", content: "angle-line (100ml) — Extrait de Parfum" },
       {
         property: "og:description",
         content: "Smoke, leather and the final say. Unisex extrait de parfum, 100ml.",
@@ -30,8 +30,8 @@ export const Route = createFileRoute("/")({
 });
 
 const gallery = [
-  { src: mainImage, alt: "REGALIA parfum bottle shaped like a chess king" },
-  { src: packagingImage, alt: "REGALIA black gift box packaging with the bottle" },
+  { src: mainImage, alt: "angle-line parfum bottle shaped like a chess king" },
+  { src: packagingImage, alt: "angle-line black gift box packaging with the bottle" },
 ];
 
 const variants = [
