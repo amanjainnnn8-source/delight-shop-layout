@@ -49,6 +49,7 @@ const notes = [
 function ProductPage() {
   const [active, setActive] = useState(0);
   const [qty, setQty] = useState(1);
+  const current = gallery[active] ?? gallery[0]!;
 
   return (
     <div className="min-h-screen bg-background text-foreground">
@@ -76,8 +77,8 @@ function ProductPage() {
           <div>
             <div className="bg-secondary">
               <img
-                src={gallery[active].src}
-                alt={gallery[active].alt}
+                src={current.src}
+                alt={current.alt}
                 width={1200}
                 height={1200}
                 className="aspect-square w-full object-cover"
